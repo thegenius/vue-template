@@ -1,0 +1,27 @@
+{
+	"vue typescript component": {
+		"prefix": "vtsc",
+		"body": [
+			"<template lang='pug'>",
+			"",
+			"</template>",
+			"",
+			"",
+			"<script lang='ts'>",
+			"import { Component, Prop, Vue } from 'vue-property-decorator'",
+			"import { State, Getter, Mutation, Action } from 'vuex-class'",
+			"",
+			"@Component",
+			"export default class extends Vue {",
+			"$0",
+			"}",
+			"</script>",
+			"",
+			"",
+			"<style lang='scss' scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Vue typescript class style component"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"vue typescript state": {
+		"prefix": "vtss",
+		"body": [
+
+		"import { ActionContext, ActionTree, GetterTree, MutationTree } from 'vuex'",
+
+		"const namespace: string = '$1/'",
+		
+		"export interface State {",
+		"$2",
+		"}",
+
+		"const initState: State = {",
+		"",
+		"}",
+
+		"export const GETTER_TYPE = {",
+    	"    /* EXAMPLE_GETTER: namespace + 'EXAMPLE_GETTER', */",
+		"}",
+		"const getters: GetterTree<any, any> = {",
+    	"    /* [GETTER_TYPE.EXAMPLE_GETTER](state: State) { */",
+        "    /*    return state.example */",
+    	"    /* } */",
+		"}",
+		"",
+		"export const MUTATION_TYPE = {",
+    	"    /* EXAMPLE_MUTATION: namespace + 'EXAMPLE_MUTATION', */",
+		"}",
+		"const mutations: MutationTree<any> = {",
+    	"    /* [MUTATION_TYPE.EXAMPLE_MUTAION](state: State, data: Data) { */",
+        "    /*     state.state.xxx = data */",
+    	"    /* } */",
+		"}",
+		"",
+		"export const ACTION_TYPE = {",
+    	"    /* EXAMPLE_ACTION: namespace + 'EXAMPLE_ACTION', */",
+		"}",
+		"const actions: ActionTree<any, any> = {",
+    	"    /* async [ACTION_TYPE.EXAMPLE_ACTION](context: ActionContext<State, any>) { */",
+    	"    /* } */",
+		"}",
+		"",
+		"export default {",
+    	"    state: initState,",
+    	"    getters,",
+    	"    actions,",
+    	"    mutations,",
+		"}"
+		],
+		"description": "Vue typescript class style state"
+	}
+}
